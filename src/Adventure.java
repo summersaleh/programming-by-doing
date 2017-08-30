@@ -17,11 +17,30 @@ public class Adventure {
 				choice = input.nextLine();
 				if (choice.equalsIgnoreCase("Upstairs")) {
 					nextRoom = 2;
-				} else if(choice.equalsIgnoreCase("Kitchen")) {
+				} else if (choice.equalsIgnoreCase("Kitchen")) {
 					nextRoom = 3;
 				} else {
 					System.out.println("Try Again");
 				}
+			}
+			if (nextRoom == 2) {
+				System.out.println(
+						"As you walk up stairs you hear the creaking of the old wood beneath your feet and old spider webs hit your face. Ew.\nDo you want to go to the \"bedroom\" or the \"attic\" or back down to the \"kitchen\"?");
+				System.out.print(">");
+				choice = input.nextLine();
+				if (choice.equalsIgnoreCase("bedroom")) {
+					nextRoom = 4;
+				} else if (choice.equalsIgnoreCase("attic")) {
+					nextRoom = 5;
+				} else {
+					System.out.println("Try Again");
+				}
+			}
+
+			if (nextRoom == 3) {
+				System.out.println("You go to the kitchen and make your self a scooby doo sized sandwich");
+				System.out.println("");
+
 			}
 		}
 	}
