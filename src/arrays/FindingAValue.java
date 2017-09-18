@@ -12,7 +12,7 @@ public class FindingAValue {
 		int[] value = new int[10];
 		System.out.print("Array: ");
 		for (int i = 0; i < value.length; i++) {
-			int num = (int) ((50 * Math.random()) + 1) * value.length;
+			int num = (int) ((5 * Math.random()) + 1) * value.length;
 			value[i] = num;
 			System.out.print("\t" + value[i]);
 		}
